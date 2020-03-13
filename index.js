@@ -209,7 +209,10 @@ function isItAnApple(strings) {
  * [2] Invoking `removeApple` with `['a', 'b', 'c' ]` will return `[ 'a', 'b', 'c' ]`.
 */
 function removeApple(strings) {
-  /* code here */
+  let filter = 'apple'
+  let filter2 = filter.toLowerCase()
+  let filtered = strings.filter((str)=>{return str.indexOf(filter2) === -1})
+  return filtered
 }
 
 /**
